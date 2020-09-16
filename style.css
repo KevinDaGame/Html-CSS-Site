@@ -46,9 +46,14 @@ header section {
     height: 100%;
 }
 .wieBenIkArticle {
-    offset-block-start: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     background: rgba(114,219,110,1);
-    
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.wieBenIkArticle h1 {
+    size: 100px;
 }
 .wieBenIkFooter {
     background: #72db6e
