@@ -21,11 +21,15 @@ header section {
 
 .logo {
     height: 100%;
+    padding: 25px;
 }
 
 .mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
-    height: 50px;
+    height: 60px;
     background-color: #72DB6E;
     padding: 0;
 }
@@ -34,8 +38,16 @@ header section {
     /* width: 100%; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 10%;
+    list-style: none;
+}
+
+.mainMenu a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 /*********************** 
