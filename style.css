@@ -32,6 +32,7 @@ header section {
     height: 60px;
     background-color: #72DB6E;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .mainMenu ul {
@@ -54,8 +55,22 @@ header section {
           Home
 ***********************/
 .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100vw;
-    height: 200px;
+    height: 350px;
+    background-image: url(images/unknown-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1,
+.hero h2 {
+    text-align: center;
+    color: #FFF;
+    margin: 0;
 }
 
 /*********************** 
