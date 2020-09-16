@@ -93,7 +93,8 @@ header section {
 
 .mainContent aside {
     background: green;
-    width: 400px;
+    width: 600px;
+    padding: 20px;
 }
 
 /*********************** 
