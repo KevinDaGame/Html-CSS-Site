@@ -73,6 +73,29 @@ header section {
     margin: 0;
 }
 
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero h2 {
+    font-size: 27px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 140px;
+}
+
+.mainContent div {
+    width: 100%;
+}
+
+.mainContent aside {
+    background: green;
+    width: 400px;
+}
+
 /*********************** 
         Over ons
 ***********************/
