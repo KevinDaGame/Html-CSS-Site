@@ -13,12 +13,15 @@ header {
 
 header section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
     
 }
 
 .logo {
-    margin-left: auto;
-    margin-right: auto;
+    height: 100%;
+
 }
 
 /*********************** 
