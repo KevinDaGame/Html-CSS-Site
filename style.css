@@ -77,7 +77,8 @@ header section {
         Over ons
 ***********************/
 .wieBenIkBody {
-    background: linear-gradient(180deg, rgba(114,219,110,1) 0%, rgba(133,242,160,1) 65%, rgba(255,255,255,1) 100%);
+    background: rgb(125,250,227);
+    background: linear-gradient(180deg, rgba(125,250,227,1) 0%, rgba(110,219,168,1) 46%, rgba(133,242,160,1) 100%);
     height: 100%;
 }
 .wieBenIkArticle {
@@ -89,7 +90,7 @@ header section {
 .wieBenIkArticle h1 {
     font-size: 40px;
     color: rgba(255,255,255,1);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Lora', serif;
 }
 .wieBenIkArticle p {
     font-family: 'Lora', serif;
