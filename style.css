@@ -1,9 +1,18 @@
+/*********************** 
+        Algemeen
+***********************/
+
 body {
     margin: 0;
 }
 
 header {
     width: 100vw;
+    background-color: #85F2A0;
+}
+
+header section {
+
 }
 
 .logo {
