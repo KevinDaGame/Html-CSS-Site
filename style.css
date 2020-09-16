@@ -12,10 +12,15 @@ header {
 }
 
 header section {
-
+    display: flex;
+    
 }
 
 .logo {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*********************** 
+        Over ons
+***********************/
