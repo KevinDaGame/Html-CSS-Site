@@ -52,7 +52,10 @@ header section {
     font-size: 20px;
     text-transform: uppercase;
 }
-
+footer {
+    background-color: #72DB6E;
+    
+}
 /*********************** 
           Home
 ***********************/
@@ -94,7 +97,8 @@ header section {
 }
 
 .mainContent aside {
-    background: green;
+    background:  rgba(114,219,110);
+    border-radius: 25px;
     width: 600px;
     padding: 20px;
 }
@@ -103,8 +107,7 @@ header section {
         Over ons
 ***********************/
 .wieBenIkBody {
-    background: #ABFAAB;
-    
+    background: rgba(171, 250, 171, 0.9);
     height: 100%;
 }
 .wieBenIkArticle {
