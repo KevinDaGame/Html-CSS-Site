@@ -10,7 +10,6 @@ header {
     width: 100vw;
     background-color: #85F2A0;
     background-image: url("images/nightsky.png");
-    
 }
 
 header section {
@@ -53,7 +52,10 @@ header section {
     font-size: 20px;
     text-transform: uppercase;
 }
-
+footer {
+    background-color: #72DB6E;
+    
+}
 /*********************** 
           Home
 ***********************/
@@ -95,7 +97,8 @@ header section {
 }
 
 .mainContent aside {
-    background: green;
+    background:  rgba(114,219,110);
+    border-radius: 25px;
     width: 600px;
     padding: 20px;
 }
@@ -104,13 +107,13 @@ header section {
         Over ons
 ***********************/
 .wieBenIkBody {
-    background: rgb(125,250,227);
-    background: linear-gradient(180deg, rgba(125,250,227,1) 0%, rgba(110,219,168,1) 46%, rgba(133,242,160,1) 100%);
+    background: rgba(171, 250, 171, 0.9);
     height: 100%;
 }
 .wieBenIkArticle {
     margin: 10%;
     background: rgba(114,219,110,1);
+    border-radius: 50px;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
 }
