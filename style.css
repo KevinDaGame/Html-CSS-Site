@@ -101,13 +101,14 @@ header section {
         Over ons
 ***********************/
 .wieBenIkBody {
-    background: rgb(125,250,227);
-    background: linear-gradient(180deg, rgba(125,250,227,1) 0%, rgba(110,219,168,1) 46%, rgba(133,242,160,1) 100%);
+    background: #ABFAAB;
+    
     height: 100%;
 }
 .wieBenIkArticle {
     margin: 10%;
     background: rgba(114,219,110,1);
+    border-radius: 50px;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
 }
