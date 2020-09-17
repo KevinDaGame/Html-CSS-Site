@@ -131,3 +131,21 @@ footer {
 .wieBenIkFooter {
     background: #72db6e
 }
+
+
+/*********************** 
+        Fonts and colours (delete on final site) (also kevins practice page I guess)
+***********************/
+.box {
+width: 500px;
+height: 500px;
+border: 2px solid black;
+}
+.overviewtextbox {
+    position: relative;
+    right: 50 px;
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid black;
+}
