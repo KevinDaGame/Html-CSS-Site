@@ -9,6 +9,8 @@ body {
 header {
     width: 100vw;
     background-color: #85F2A0;
+    background-image: url("images/nightsky.png");
+    
 }
 
 header section {
@@ -23,6 +25,7 @@ header section {
     height: 100%;
     padding: 25px;
 }
+
 
 .mainMenu {
     display: flex;
@@ -60,7 +63,7 @@ header section {
     flex-direction: column;
     width: 100vw;
     height: 350px;
-    background-image: url(images/unknown-1.png);
+    background-image: url(images/Cave.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
