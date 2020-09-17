@@ -9,6 +9,8 @@ body {
 header {
     width: 100vw;
     background-color: #85F2A0;
+    background-image: url("images/nightsky.png");
+    
 }
 
 header section {
@@ -23,6 +25,7 @@ header section {
     height: 100%;
     padding: 25px;
 }
+
 
 .mainMenu {
     display: flex;
