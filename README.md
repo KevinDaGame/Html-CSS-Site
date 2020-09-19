@@ -9,3 +9,6 @@ Site van Kevin en Roy
 - Lichtgroen:       #B1FF80
 
 - Overons BG:       #ABFAAB
+
+# Fonts:
+
