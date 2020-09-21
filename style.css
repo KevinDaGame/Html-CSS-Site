@@ -134,10 +134,17 @@ footer {
 
 
 /*********************** 
-        Fonts and colours (delete on final site) (also kevins practice page I guess)
+        Fonts and colours (delete on final site) (this also is kevins practice page I guess)
 ***********************/
 .box {
-width: 500px;
-height: 500px;
+width: 200px;
+height: 200px;
 border: 2px solid black;
+margin: 50px;
+}
+.flexbox-Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
 }
