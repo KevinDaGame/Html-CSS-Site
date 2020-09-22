@@ -110,6 +110,23 @@ footer {
     background: rgba(171, 250, 171, 0.9);
     height: 100%;
 }
+.wieBenIkFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wieBenIkTitle {
+
+    font-size: 60px;
+    color: rgba(255,255,255,1);
+    font-family: 'Lora', serif;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+    background: rgba(114,219,110,1);
+    border-radius: 50px;
+}
 .wieBenIkArticle {
     margin: 10%;
     background: rgba(114,219,110,1);
@@ -117,7 +134,8 @@ footer {
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
 }
-.wieBenIkArticle h1 {
+
+.wieBenIkArticle h2 {
     font-size: 40px;
     color: rgba(255,255,255,1);
     font-family: 'Lora', serif;
