@@ -1,6 +1,10 @@
 /*********************** 
         Algemeen
 ***********************/
+* {
+  font-family: 'Roboto Slab', serif;  
+  font-weight: 400;
+}
 
 body {
     margin: 0;
@@ -47,6 +51,8 @@ header section {
 }
 
 .mainMenu a {
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
     color: #FFF;
     text-decoration: none;
     font-size: 20px;
@@ -70,7 +76,6 @@ footer {
     background-size: cover;
     background-position: center;
 }
-
 .hero h1,
 .hero h2 {
     text-align: center;
@@ -80,10 +85,14 @@ footer {
 
 .hero h1 {
     font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
 }
 
 .hero h2 {
     font-size: 27px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
 }
 
 .mainContent {
@@ -102,6 +111,14 @@ footer {
     width: 600px;
     padding: 20px;
 }
+.mainContent h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+.mainContent p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
 
 /*********************** 
         Over ons
@@ -112,14 +129,16 @@ footer {
 }
 .wieBenIkFlex {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .wieBenIkTitle {
 
     font-size: 60px;
     color: rgba(255,255,255,1);
-    font-family: 'Lora', serif;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
     width: fit-content;
     margin: auto;
     margin-top: 25px;
@@ -128,23 +147,26 @@ footer {
     border-radius: 50px;
 }
 .wieBenIkArticle {
-    margin: 10%;
+    margin: auto;
+    margin-top: 100px;
     background: rgba(114,219,110,1);
     border-radius: 50px;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    width: 40%;
 }
 
 .wieBenIkArticle h2 {
+    text-align: center;
     font-size: 40px;
     color: rgba(255,255,255,1);
-    font-family: 'Lora', serif;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
 }
 .wieBenIkArticle p {
-    font-family: 'Lora', serif;
     font-size: 20px;
     color: rgba(255,255,255,1);
     padding: 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
 }
 .wieBenIkFooter {
     background: #72db6e
