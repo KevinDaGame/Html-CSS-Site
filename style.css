@@ -223,11 +223,11 @@ footer {
 
 .imgRow {
     flex: 25%;
-    max-width: 25%;
+    max-width: auto;
     padding: 0 4px;
   }
   
-  /* Create four equal columns that sits next to each other */
+
   .imgColumn {
     display: flex;
     flex-flow: row wrap;
