@@ -180,7 +180,29 @@ footer {
     background: #72db6e
 }
 
+/*********************** 
+          Foto's
+***********************/
 
+.imgRow {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .imgColumn {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 4px;
+    
+  }
+  
+  .imgColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 /*********************** 
         Fonts and colours (delete on final site) (this also is kevins practice page I guess)
 ***********************/
@@ -232,3 +254,4 @@ margin: 50px;
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 700;
 }
+
