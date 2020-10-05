@@ -17,6 +17,8 @@ header {
     width: 100vw;
     background-color: #85F2A0;
     background-image: url("images/nightsky.png");
+    background-position: center;
+    
 }
 
 header section {
@@ -29,6 +31,7 @@ header section {
 .logo {
     height: 100%;
     padding: 25px;
+    justify-self: ;
 }
 
 menu {
@@ -177,9 +180,8 @@ footer {
 
 .wieBenIkFlex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
+    flex: 100%;
+    flex-flow: row wrap;
 }
 .wieBenIkTitle {
 
@@ -198,7 +200,7 @@ footer {
     margin-top: 100px;
     background: rgba(114,219,110,1);
     border-radius: 50px;
-    width: 40%;
+    width: 80%;
 }
 
 .wieBenIkArticle h2 {
@@ -215,9 +217,7 @@ footer {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 }
-.wieBenIkFooter {
-    background: #72db6e
-}
+
 
 /*********************** 
           Foto's
@@ -291,6 +291,10 @@ footer {
 
     .dropdown {
         display: none
+    }
+
+    .wieBenIkArticle {
+        width: 40%;
     }
 
     .imgRow {
