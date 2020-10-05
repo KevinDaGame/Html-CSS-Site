@@ -16,8 +16,8 @@ header {
     top: 0;
     width: 100vw;
     background-color: #85F2A0;
-    background-image: url("images/nightsky.png");
-    background-position: center;
+    background-image: url("images/globe.jpg");
+    background-position: top;
     
 }
 
@@ -108,7 +108,9 @@ menu {
 main {
     margin-top: 266px;
 }
-
+.greenBackGroundMain {
+    background: rgba(171, 250, 171, 0.9);
+}
 /* Footer */
 
 footer {
@@ -287,7 +289,10 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
+    header {
+        background-image: url("images/nightSky.png");
+        background-position: center;
+    }
     .dropdown {
         display: none
     }
