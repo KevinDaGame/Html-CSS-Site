@@ -11,6 +11,8 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
     width: 100vw;
     background-color: #85F2A0;
     background-image: url("images/nightsky.png");
@@ -21,7 +23,6 @@ header section {
     flex-direction: column;
     align-items: center;
     height: 200px;
-    
 }
 
 .logo {
@@ -99,6 +100,10 @@ menu {
   
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+main {
+    margin-top: 266px;
 }
 
 /* Footer */
