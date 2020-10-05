@@ -29,9 +29,8 @@ header section {
 }
 
 .logo {
-    
-    height: 100%;
-    padding: 25px;
+    height: 90%;
+    padding: 10px;
 }
 
 nav {
@@ -109,7 +108,7 @@ nav {
 }
 
 main {
-    margin-top auto:
+    margin-top: auto;
 }
 .greenBackGroundMain {
     background: rgba(171, 250, 171, 0.9);
@@ -197,6 +196,7 @@ footer {
     margin: auto;
     margin-top: 25px;
     padding: 10px;
+    border-radius: 20px;
     background: rgba(114,219,110,1);
 }
 .wieBenIkArticle {
