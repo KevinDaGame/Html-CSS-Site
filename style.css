@@ -236,7 +236,7 @@ footer {
 }
 
 .imgRow {
-    flex: 25%;
+    flex: 100%;
     max-width: auto;
     padding: 0 4px;
   }
@@ -286,8 +286,12 @@ footer {
     }
 
     .dropdown {
-        display: none;
+        display: none
     }
+
+    .imgRow {
+        flex: 25%;
+      }
 }
 
 
