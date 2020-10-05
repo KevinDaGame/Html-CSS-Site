@@ -8,6 +8,8 @@
 
 body {
     margin: 0;
+    background: rgba(171, 250, 171, 0.9);
+    height: 100%;
 }
 
 header {
@@ -168,10 +170,7 @@ footer {
 /*********************** 
         Over ons
 ***********************/
-.wieBenIkBody {
-    background: rgba(171, 250, 171, 0.9);
-    height: 100%;
-}
+
 .wieBenIkFlex {
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +188,6 @@ footer {
     margin-top: 25px;
     padding: 10px;
     background: rgba(114,219,110,1);
-    border-radius: px;
 }
 .wieBenIkArticle {
     margin: auto;
@@ -220,6 +218,22 @@ footer {
 /*********************** 
           Foto's
 ***********************/
+.imgTitle {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 60px;
+}
+.imgSubTitle {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
 
 .imgRow {
     flex: 25%;
@@ -240,6 +254,13 @@ footer {
     vertical-align: middle;
     width: 100%;
     border-radius: 10px;
+  }
+  .imgBox {
+    background: rgba(114,219,110,1);
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px;
   }
 
 
