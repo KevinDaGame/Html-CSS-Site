@@ -29,14 +29,9 @@ header section {
 }
 
 .logo {
-<<<<<<< HEAD
     
     height: 80%;
     padding: 25px;
-=======
-    height: 90%;
-    padding: 10px;
->>>>>>> 63992e679825fe3462563dddc60b1231e41383ce
 }
 
 nav {
@@ -111,11 +106,7 @@ nav {
 }
 
 main {
-<<<<<<< HEAD
     margin-top: 0px;
-=======
-    margin-top: auto;
->>>>>>> 63992e679825fe3462563dddc60b1231e41383ce
 }
 .greenBackGroundMain {
     background: rgba(171, 250, 171, 0.9);
