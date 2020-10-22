@@ -41,15 +41,32 @@
 
     </nav>
 
-    <main>
+    <main class="greenBackGroundMain">
         <section class="staffApplicationText">
             
         </section>
         <div class="StaffApplications">
-            <input type="email" placeholder="Your email adress">
-            <input type="text">
-            <input type=>
-            <input type="search">
+            <div class="textInput"></div>
+            <input type="email" name="email" placeholder="Your email adress">
+         </div>
+         <div class="textInput"></div>
+            <input type="text" name="firstName" placeholder="First name">
+         </div>
+         <div class="textInput"></div>
+            <input type="text" name="lastName" placeholder="Last name">
+         </div>
+            <input type="number" name="age" placeholder="age">
+            <select name="applyingFor" id="applyingFor">
+                <option value="admin"> Admin</option>
+                <option value="moderator">Moderator</option>
+                <option value="helper">Helper</option>
+                <option value="dev">Developer</option>
+                <option value="builder">Builder</option>
+            </select>
+            <textarea name="whyAreYouApplying">Why do you want to be part of our staff team?</textarea>
+            <input type="radio">
+            <input type="checkbox">
+            
             <input type="submit">
         </div>
     </main>

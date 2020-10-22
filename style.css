@@ -269,6 +269,25 @@ footer {
     border-radius: 20px;
   }
 
+/*********************** 
+        Staff applications
+***********************/
+.staffApplicationText{
+
+}
+.staffApplications {
+
+    display: flex;
+    flex: 100%;
+    flex-flow: row wrap;
+}
+.staffApplications input[type=text] {
+    border-radius: 10px;
+}
+.textInput {
+    margin: auto;
+}
+
 
 /*********************** 
         Media queries
