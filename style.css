@@ -32,20 +32,17 @@ header section {
 .logo {
     height: 80%;
     padding: 25px;
-    transform: translateX(0vw);
+    transform: translateX(-40vw);
     animation-name: logoAnimation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    transition: ease-in;
+    transition: linear;
 }
 
 /* Logo animation */
 @keyframes logoAnimation {
-    0% {transform: translateX(0) rotate(0deg);}
-    25% {transform: translateX(40vw) rotate(18000deg);}
-    50% {transform: translateX(0) rotate(0deg);}
-    75% {transform: translateX(-40vw) rotate(-18000deg);}
-    100% {transform: translateX(0) rotate(0deg);}
+    50% {transform: translateX(40vw) rotate(180deg);}
+    100% {transform: translateX(-40vw) rotate(+);}
   }
 
 nav {
@@ -78,6 +75,7 @@ nav {
 
 .mainMenu a:hover {
     border: 1px solid black;
+    border-radius: 10;
 }
 
 .dropbtn {
