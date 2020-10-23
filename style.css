@@ -76,6 +76,7 @@ nav {
 .mainMenu a:hover {
     animation: mainMenuHoverAnimation;
     animation-duration: 1s;
+    font-size: 30px;
     
 }
 @keyframes mainMenuHoverAnimation {
