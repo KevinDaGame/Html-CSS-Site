@@ -42,7 +42,7 @@ header section {
 /* Logo animation */
 @keyframes logoAnimation {
     50% {transform: translateX(40vw) rotate(180deg);}
-    100% {transform: translateX(-40vw) rotate(+);}
+    100% {transform: translateX(-40vw) rotate(360);}
   }
 
 nav {
@@ -57,7 +57,7 @@ nav {
 }
 
 .mainMenu ul {
-    padding: 0 10%;
+    padding: 0 20%;
     list-style: none;
     display: none;
 }
@@ -70,13 +70,24 @@ nav {
     font-size: 20px;
     text-transform: uppercase;    
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .mainMenu a:hover {
-    border: 1px solid black;
+    animation: mainMenuHoverAnimation;
+    animation-duration: 1s;
+    
 }
-
+@keyframes mainMenuHoverAnimation {
+    from {
+        font-size: 20px;
+        padding: 20px;
+    }
+    to {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
 .dropbtn {
     background-color: #72DB6E;
     color: white;
@@ -111,12 +122,18 @@ nav {
   
 .dropdown:hover .dropdown-content {
     display: block;
+    animation: dropdownAnimation;
+    animation-duration: 500ms;
 }
   
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+    
 }
-
+@keyframes dropdownAnimation {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
 main {
     margin-top: 0px;
 }
