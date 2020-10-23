@@ -46,15 +46,9 @@
             
         </section>
         <div class="StaffApplications">
-            <div class="textInput"></div>
             <input type="email" name="email" placeholder="Your email adress">
-         </div>
-         <div class="textInput"></div>
             <input type="text" name="firstName" placeholder="First name">
-         </div>
-         <div class="textInput"></div>
             <input type="text" name="lastName" placeholder="Last name">
-         </div>
             <input type="number" name="age" placeholder="age">
             <select name="applyingFor" id="applyingFor">
                 <option value="admin"> Admin</option>
@@ -63,9 +57,25 @@
                 <option value="dev">Developer</option>
                 <option value="builder">Builder</option>
             </select>
-            <textarea name="whyAreYouApplying">Why do you want to be part of our staff team?</textarea>
-            <input type="radio">
-            <input type="checkbox">
+            <div>
+                <p>Why do you want to be part of our staffteam?</p>
+                <textarea name="whyAreYouApplying">Why do you want to be part of our staff team?</textarea>
+            </div>
+            <div>
+            <p>Are you available through discord?</p>
+                <div>
+                    <p>yes</p>
+                    <input type="radio">
+                </div>
+                <div>
+                    <p>no</p>
+                    <input type="radio">
+                </div>
+            </div>
+            <div>
+                <p>Do you agree with our <span class="termsAndConditions">terms and conditions? </span><span class="termsAndConditionsText">by agreeing to our terms</span></p>
+                <input type="checkbox">
+            </div>
             
             <input type="submit">
         </div>
