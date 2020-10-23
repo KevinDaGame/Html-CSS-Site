@@ -9,6 +9,7 @@
 body {
     margin: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,7 +32,21 @@ header section {
 .logo {
     height: 80%;
     padding: 25px;
+    transform: translateX(0vw);
+    animation-name: logoAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
 }
+
+/* Logo animation */
+@keyframes logoAnimation {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(50vw)}
+    50% {transform: translateX(0)}
+    75% {transform: translateX(-50vw)}
+    100% {transform: translateX(0)}
+  }
 
 nav {
     position: sticky;
@@ -158,8 +173,8 @@ footer {
 
 .mainContent {
     display: flex;
-    flex-direction: row;
-    padding: 40px 140px;
+    flex-direction: column;
+    padding: 40px 15vw;
     gap: 50px;
 }
 
@@ -169,11 +184,16 @@ footer {
 
 .quoteBlock {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.quoteBlock:last-child {
+    display: none;
 }
 
 .quoteBlock q {
     margin-left: 20px;
+    text-align: center;
 }
 
 .quoteImage {
@@ -189,6 +209,7 @@ footer {
     height: 200px;
     perspective: 1000px;
     border-radius: 100px;
+    margin: auto;
 }
   
 .flip-box-inner {
@@ -232,7 +253,6 @@ footer {
 .mainContent aside {
     background:  rgb(114,219,110);
     border-radius: 25px;
-    width: 600px;
     padding: 20px;
 }
 .mainContent h2 {
@@ -358,10 +378,16 @@ footer {
 
 
 /*********************** 
-        Media queries
+    Media queries
 ***********************/
 @media screen and (min-width: 480px) {
-    
+    .mainContent {
+        flex-direction: row;
+    }
+
+    .mainContent aside {
+        width: 40vw;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -377,12 +403,30 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
     header {
         background-image: url("images/nightSky.png");
         background-position: center;
     }
+
     .dropdown {
         display: none
+    }
+
+    .mainContent {
+        padding: 40px 10vw;
+    }
+
+    .mainContent aside {
+        width: 600px;
+    }
+
+    .quoteBlock {
+        flex-direction: row;
+    }
+
+    .quoteBlock:last-child {
+        display: flex;
     }
 
     .wieBenIkArticle {
