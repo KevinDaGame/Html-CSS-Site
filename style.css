@@ -153,6 +153,23 @@ footer {
     background-color: #72DB6E;
 }
 
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 50px;
+    margin: 0;
+}
+
+footer ul .divider {
+    display: none;
+}
+
+footer li,
+footer a {
+    color: #000;
+}
+
 /*********************** 
           Home
 ***********************/
@@ -232,7 +249,7 @@ footer {
     width: 200px;
     height: 200px;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out 0.1s;
     transform-style: preserve-3d;
 }
   
@@ -466,6 +483,14 @@ footer {
     .imgRow {
         flex: 25%;
       }
+
+    footer ul {
+        flex-direction: row;
+    }
+    
+    footer ul .divider {
+        display: unset;
+    }
 }
 
 
