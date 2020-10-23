@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto's</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Oxygen:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Foto's</title>
+    <script src="https://kit.fontawesome.com/278d9ca16e.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <header>
         <section>
             <img class="logo" src="images/logo.png" alt="Logo">
         </section>
-        <menu class="mainMenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="overons.html">Over ons</a></li>
-                <li><a href="watbiedenwij.html">Wat bieden wij</a></li>
-                <li><a href="Fotos.html">Foto's</a></li>
-                <li><a href="staffapplications.html">Staff Applicaties</a></li>
-                <li><a href="overview.html">Fonts en colours</a></li>
-                
-            </ul>
-        </menu>
+      
     </header>
-    <main>
+    
+    <nav class="mainMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overons.html">Over ons</a></li>
+            <li><a href="watbiedenwij.html">Wat bieden wij</a></li>
+            <li><a href="Fotos.html">Foto's</a></li>
+            <li><a href="staffapplications.html">Staff Applicaties</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="overons.html">Over ons</a>
+                <a href="watbiedenwij.html">Wat bieden wij</a>
+                <a href="Fotos.html">Foto's</a>
+                <a href="staffapplications.html">Staff Applicaties</a>
+                <a href="overview.html">Fonts en colours</a>
+            </div>
+        </div>
+
+    </nav>
+    
+    <main class="greenBackGroundMain">
         <h2 class="imgTitle">Fotogallerij</h2>
         <h3 class="imgSubTitle">Een preview wat je wacht op de server</h3>
         <div class="imgColumn">
@@ -313,5 +331,13 @@
         </div>
 
     </main>
+
+    <footer class="wieBenIkFooter">
+        <p>Made by: Kevin Dolfing</p>
+        <a href="privacypolicycozwhynot.html">privacy policy</a>
+        <br>
+        <a href="overview.html">Fonts and colours</a>
+    </footer>
+
 </body>
 </html>
