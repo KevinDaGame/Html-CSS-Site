@@ -34,18 +34,18 @@ header section {
     padding: 25px;
     transform: translateX(0vw);
     animation-name: logoAnimation;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     transition: ease-in;
 }
 
 /* Logo animation */
 @keyframes logoAnimation {
-    0% {transform: translateX(0);}
-    25% {transform: translateX(50vw)}
-    50% {transform: translateX(0)}
-    75% {transform: translateX(-50vw)}
-    100% {transform: translateX(0)}
+    0% {transform: translateX(0) rotate(0deg);}
+    25% {transform: translateX(40vw) rotate(18000deg);}
+    50% {transform: translateX(0) rotate(0deg);}
+    75% {transform: translateX(-40vw) rotate(-18000deg);}
+    100% {transform: translateX(0) rotate(0deg);}
   }
 
 nav {
