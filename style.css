@@ -29,7 +29,6 @@ header section {
 }
 
 .logo {
-    
     height: 80%;
     padding: 25px;
 }
@@ -42,6 +41,7 @@ nav {
     height: auto;
     min-height: 50px;
     background-color: #72DB6E;
+    z-index: 9999999;
 }
 
 .mainMenu ul {
@@ -111,8 +111,14 @@ main {
 .greenBackGroundMain {
     background: rgba(171, 250, 171, 0.9);
 }
-/* Footer */
 
+.center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer */
 footer {
     background-color: #72DB6E;
 }
@@ -157,14 +163,17 @@ footer {
     gap: 50px;
 }
 
-.mainContent div {
+.mainContent > div {
     width: 100%;
 }
 
 .quoteBlock {
     display: flex;
     flex-direction: row;
-    
+}
+
+.quoteBlock q {
+    margin-left: 20px;
 }
 
 .quoteImage {
@@ -172,6 +181,52 @@ footer {
     height: 200px;
     object-fit: cover;
     border-radius: 100px;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    border-radius: 100px;
+}
+  
+.flip-box-inner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 100px;
+}
+  
+.flip-box-back {
+    background-color: #72DB6E;
+    color: #000;
+    transform: rotateY(180deg);
+}
+
+.flip-box-back h2 {
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.flip-box-back p {
+    font-size: 13px;
+    margin: 0 20px 20px;
 }
 
 .mainContent aside {
@@ -199,14 +254,13 @@ footer {
     flex-flow: row wrap;
 }
 .wieBenIkTitle {
-
     font-size: 60px;
     color: rgba(255,255,255,1);
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
     width: fit-content;
     margin: auto;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding: 10px;
     border-radius: 20px;
     background: rgba(114,219,110,1);
@@ -243,7 +297,7 @@ footer {
     font-weight: 700;
     width: fit-content;
     margin: auto;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     font-size: 60px;
 }
 .imgSubTitle {
