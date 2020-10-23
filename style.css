@@ -32,20 +32,17 @@ header section {
 .logo {
     height: 80%;
     padding: 25px;
-    transform: translateX(0vw);
+    transform: translateX(-40vw);
     animation-name: logoAnimation;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
-    transition: ease-in;
+    transition: linear;
 }
 
 /* Logo animation */
 @keyframes logoAnimation {
-    0% {transform: translateX(0);}
-    25% {transform: translateX(50vw)}
-    50% {transform: translateX(0)}
-    75% {transform: translateX(-50vw)}
-    100% {transform: translateX(0)}
+    50% {transform: translateX(40vw) rotate(180deg);}
+    100% {transform: translateX(-40vw) rotate(360);}
   }
 
 nav {
@@ -60,7 +57,7 @@ nav {
 }
 
 .mainMenu ul {
-    padding: 0 10%;
+    padding: 0 20%;
     list-style: none;
     display: none;
 }
@@ -73,13 +70,25 @@ nav {
     font-size: 20px;
     text-transform: uppercase;    
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .mainMenu a:hover {
-    border: 1px solid black;
+    animation: mainMenuHoverAnimation;
+    animation-duration: 1s;
+    font-size: 30px;
+    
 }
-
+@keyframes mainMenuHoverAnimation {
+    from {
+        font-size: 20px;
+        padding: 20px;
+    }
+    to {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
 .dropbtn {
     background-color: #72DB6E;
     color: white;
@@ -114,12 +123,18 @@ nav {
   
 .dropdown:hover .dropdown-content {
     display: block;
+    animation: dropdownAnimation;
+    animation-duration: 500ms;
 }
   
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+    
 }
-
+@keyframes dropdownAnimation {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
 main {
     margin-top: 0px;
 }
