@@ -150,10 +150,24 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 40px 140px;
+    gap: 50px;
 }
 
 .mainContent div {
     width: 100%;
+}
+
+.quoteBlock {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.quoteImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
 }
 
 .mainContent aside {
