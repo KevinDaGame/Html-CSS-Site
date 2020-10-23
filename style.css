@@ -75,7 +75,6 @@ nav {
 
 .mainMenu a:hover {
     border: 1px solid black;
-    border-radius: 10;
 }
 
 .dropbtn {
