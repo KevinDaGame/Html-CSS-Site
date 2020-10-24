@@ -400,9 +400,45 @@ footer a {
     display: flex;
     flex: 100%;
     flex-flow: row wrap;
-}
-.staffApplications input[type=text] {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 4px white;
     border-radius: 10px;
+    background-color: #B1FF80;
+
+}
+.staffApplications input{
+    background-color: rgba(110, 219, 168, 0.5);
+    height: 50px;
+    margin: 10px;
+}
+.staffApplications input[name="firstName"] {
+    flex-grow: 1;
+}
+.staffApplications input[name="lastName"] {
+    flex-grow: 1;
+}
+.staffApplications input[name="age"] {
+    flex-grow: 1;
+}
+.staffApplications input[name="email"] {
+    flex-grow: 2;
+}
+.staffApplications input:focus {
+    animation: staffApplicationsFormField;
+    animation-duration: 1s;
+    background-color: rgba(110, 219, 168, 1);
+}
+
+@keyframes staffApplicationsFormField{
+    from {
+        background-color: rgba(110, 219, 168, 0.5);
+    }
+    to {
+        background-color: rgba(110, 219, 168, 1);
+    }
+
 }
 .textInput {
     margin: auto;
@@ -412,17 +448,18 @@ footer a {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
-.termsAndConditionsText{
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+.termsAndConditionsText {
+    display: none;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 10px;
+    position: absolute;
+    
 }
-.termsAndCondtions:hover .termsAndconditionsText{
-    visibility: visible;
+
+.termsAndConditions:hover .termsAndConditionsText {
+    display: block;
+    position: static;
 }
 /*********************** 
     Media queries
