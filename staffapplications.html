@@ -45,17 +45,11 @@
         <section class="staffApplicationText">
             
         </section>
-        <div class="StaffApplications">
-            <div class="textInput"></div>
-            <input type="email" name="email" placeholder="Your email adress">
-         </div>
-         <div class="textInput"></div>
+        <div class="staffApplications">
             <input type="text" name="firstName" placeholder="First name">
-         </div>
-         <div class="textInput"></div>
             <input type="text" name="lastName" placeholder="Last name">
-         </div>
-            <input type="number" name="age" placeholder="age">
+            <input type="email" name="email" placeholder="Your email adress">
+            <input type="number" name="age" placeholder="age" max="100" min="0">
             <select name="applyingFor" id="applyingFor">
                 <option value="admin"> Admin</option>
                 <option value="moderator">Moderator</option>
@@ -63,9 +57,25 @@
                 <option value="dev">Developer</option>
                 <option value="builder">Builder</option>
             </select>
-            <textarea name="whyAreYouApplying">Why do you want to be part of our staff team?</textarea>
-            <input type="radio">
-            <input type="checkbox">
+            <div>
+                <p>Why do you want to be part of our staffteam?</p>
+                <textarea name="whyAreYouApplying">Why do you want to be part of our staff team?</textarea>
+            </div>
+            <div>
+            <p>Are you available through discord?</p>
+                <div>
+                    <p>yes</p>
+                    <input type="radio">
+                </div>
+                <div>
+                    <p>no</p>
+                    <input type="radio">
+                </div>
+            </div>
+            <div>
+                <p>Do you agree with our <span class="termsAndConditions">terms and conditions? <span class="termsAndConditionsText">by agreeing to our terms you agree to pay &#8364 50 in setup fees and additionally pay &#8364 20 a month. If you get fired from the team you will be obligated to pay an additional &#8364 500 in account removal fees and letdown fees</span></span></p>
+                <input type="checkbox">
+            </div>
             
             <input type="submit">
         </div>
