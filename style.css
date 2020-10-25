@@ -369,7 +369,6 @@ footer a {
     flex: 100%;
     max-width: auto;
     margin-right: 40px;
-    /* padding: 0 4px; */
   }
 
 .imgRow:last-of-type {
@@ -379,7 +378,6 @@ footer a {
   .imgColumn {
     display: flex;
     flex-flow: row wrap;
-    /* padding: 0 4px; */
     
   }
   
@@ -452,6 +450,16 @@ footer a {
 
 }
 
+.staffApplications input[type="radio"], input[type="checkbox"]{
+    background-color: rgba(110, 219, 168, 0.5);
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    width:auto;
+
+}
+
 .staffApplications select {
     background-color: rgba(110, 219, 168, 0.5);
     height: 50px;
@@ -467,6 +475,15 @@ footer a {
     height: 100px;
     border-radius: 10px;
 }
+
+.staffApplications p {
+}
+
+.radioYN {
+display: flex;
+flex-direction: column;
+
+}
 /* Resize the different form fields */
 
 .staffApplications input[name="age"] {
@@ -478,7 +495,7 @@ footer a {
 }
 
  /* Animation on focus */
-.staffApplications input:focus, select:focus {
+.staffApplications input:focus {
     animation: staffApplicationsFormField;
     animation-duration: 1s;
     background-color: rgba(110, 219, 168, 1);
@@ -516,24 +533,22 @@ footer a {
     }
 
 }
+/* Special effect for the terms and conditions scam popup */
 
 .termsAndConditions {
-    position: relative;
-    display: inline-block;
     border-bottom: 1px dotted black;
 }
 .termsAndConditionsText {
     display: none;
-    background-color: white;
-    max-width: 500px;
-    border-radius: 10px;
     position: absolute;
-    
+    z-index: 1;
+    background: rgba(110, 219, 168, 1);
+    width: 60%;
+    border: 5px solid black;
+    border-radius: 10px;
 }
-
 .termsAndConditions:hover .termsAndConditionsText {
     display: block;
-    position: static;
 }
 /*********************** 
     Media queries
@@ -549,6 +564,7 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
+    /* General */
     nav {
         display: flex;
         flex-direction: column;
@@ -590,7 +606,7 @@ footer a {
     .flip-box {
         margin: 0;
     }
-
+/* Wie zijn wij pagina */
     .wieBenIkArticle {
         width: 40%;
     }
@@ -599,6 +615,9 @@ footer a {
         flex: 25%;
       }
 
+/* Staff applications page */
+
+/* Footers */
     footer ul {
         flex-direction: row;
     }
