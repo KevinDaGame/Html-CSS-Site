@@ -69,38 +69,27 @@ nav {
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;    
-    padding: 10px;
-    margin: 20px;
+    padding: 10px 0;
+    margin: 20px 0;
+    transition: color 0.8s ease-in-out;
+}
+
+.mainMenu a::after {
+    content: "";
+    background-color: #242424;
+    width: calc(100%);
+    height: 2px;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .mainMenu a:hover {
-    animation: mainMenuHoverAnimation;
-    animation-duration: 1s;
-    font-size: 30px;
-    
+    color: #242424;
 }
 
-@keyframes mainMenuHoverAnimation {
-    from {
-        font-size: 20px;
-        color: #FFF;
-    }
-    to {
-        font-size: 30px;
-        color: #242424;
-    }
-}
-
-@keyframes mainMenuHoverBackAnimation {
-    from {
-        font-size: 30px;
-        color: #242424;
-    }
-    to {
-        font-size: 20px;
-        color: #FFF;
-        f
-    }
+.mainMenu a:hover::after {
+    opacity: 1;
 }
 
 .dropbtn {
@@ -154,6 +143,7 @@ main {
 }
 .greenBackGroundMain {
     background: rgba(171, 250, 171, 0.9);
+    padding: 20px 50px;
 }
 
 .center-vertical {
@@ -333,7 +323,7 @@ footer a {
 }
 .wieBenIkArticle {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     background: rgba(114,219,110,1);
     border-radius: 50px;
     width: 80%;
@@ -378,14 +368,18 @@ footer a {
 .imgRow {
     flex: 100%;
     max-width: auto;
-    padding: 0 4px;
+    margin-right: 40px;
+    /* padding: 0 4px; */
   }
-  
+
+.imgRow:last-of-type {
+    margin-right: 0;
+}
 
   .imgColumn {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 4px;
+    /* padding: 0 4px; */
     
   }
   
@@ -398,17 +392,44 @@ footer a {
   .imgBox {
     background: rgba(114,219,110,1);
     padding: 20px;
-    margin: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     border-radius: 20px;
   }
 
 /*********************** 
-        Staff applications
+       Leaderboard
 ***********************/
-.staffApplicationText{
-
+.leaderboard {
+    padding: 40px 15vw;
 }
+
+.leaderboard table,
+.leaderboard th,
+.leaderboard td {
+    border-collapse: collapse;
+}
+
+.leaderboard tr:first-of-type {
+    background-color: darkgreen;
+}
+
+.leaderboard th {
+    text-align: left;
+    /* background-color: darkgreen; */
+    color: #fff;
+    padding: 5px;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+
+.leaderboard td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*********************** 
+    Staff applications
+***********************/
 .staffApplications {
 
     display: flex;
@@ -525,6 +546,10 @@ footer a {
 
     .quoteBlock:last-child {
         display: flex;
+    }
+
+    .flip-box {
+        margin: 0;
     }
 
     .wieBenIkArticle {
