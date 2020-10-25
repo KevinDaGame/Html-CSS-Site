@@ -431,53 +431,92 @@ footer a {
     Staff applications
 ***********************/
 .staffApplications {
-
+    align-self: center;
     display: flex;
     flex: 100%;
     flex-flow: row wrap;
-    width: 80%;
-    margin: auto;
+    width: 90%;
     padding: 10px;
     border: 4px white;
     border-radius: 10px;
     background-color: #B1FF80;
-
 }
+/* Default state for different form elements */
 .staffApplications input{
     background-color: rgba(110, 219, 168, 0.5);
     height: 50px;
-    margin: 10px;
+    margin: 5%;
+    border-radius: 10px;
+    text-align: center;
+    width:90%;
+
 }
-.staffApplications input[name="firstName"] {
-    flex-grow: 1;
+
+.staffApplications select {
+    background-color: rgba(110, 219, 168, 0.5);
+    height: 50px;
+    margin: 5%;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
 }
-.staffApplications input[name="lastName"] {
-    flex-grow: 1;
+
+.staffApplications textarea {
+    background-color: rgba(110, 219, 168, 0.5);
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
 }
+/* Resize the different form fields */
+
 .staffApplications input[name="age"] {
-    flex-grow: 1;
+    width: auto;
 }
+
 .staffApplications input[name="email"] {
-    flex-grow: 2;
+    width: 50%;
 }
-.staffApplications input:focus {
+
+ /* Animation on focus */
+.staffApplications input:focus, select:focus {
     animation: staffApplicationsFormField;
     animation-duration: 1s;
     background-color: rgba(110, 219, 168, 1);
+    height: 60px;
 }
 
+.staffApplications textarea:focus {
+    animation: staffApplicationsFormFieldLarge;
+    animation-duration: 1s;
+    background-color: rgba(110, 219, 168, 1);
+    height: 120px;
+}
+
+/* focus animations */
 @keyframes staffApplicationsFormField{
     from {
         background-color: rgba(110, 219, 168, 0.5);
+        height: 50px
     }
     to {
         background-color: rgba(110, 219, 168, 1);
+        height: 60px;
     }
 
 }
-.textInput {
-    margin: auto;
+
+@keyframes staffApplicationsFormFieldLarge{
+    from {
+        background-color: rgba(110, 219, 168, 0.5);
+        height: 100px
+    }
+    to {
+        background-color: rgba(110, 219, 168, 1);
+        height: 120px;
+    }
+
 }
+
 .termsAndConditions {
     position: relative;
     display: inline-block;
