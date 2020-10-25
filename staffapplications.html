@@ -48,41 +48,40 @@
 
                 Purus semper eget duis at tellus at. Odio eu feugiat pretium nibh ipsum consequat. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Amet nisl purus in mollis. Id cursus metus aliquam eleifend mi in nulla. Odio tempor orci dapibus ultrices in iaculis nunc sed. Amet aliquam id diam maecenas ultricies mi eget. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Leo duis ut diam quam. Faucibus purus in massa tempor. Placerat vestibulum lectus mauris ultrices eros in. Nisi lacus sed viverra tellus in hac habitasse. Eget nullam non nisi est.</p>
         </section>
-        <div class="staffApplications">
-            <input type="text" name="firstName" placeholder="First name">
-            <input type="text" name="lastName" placeholder="Last name">
-            <input type="email" name="email" placeholder="Your email adress">
-            <input type="number" name="age" placeholder="age" max="100" min="0">
-            <p>What are you applying for?</p>
-            <select name="applyingFor" id="applyingFor">
-                <option value="helper">Helper</option>
-                <option value="builder">Builder</option>
-                <option value="moderator">Moderator</option>
-                <option value="admin"> Admin</option>
-                <option value="dev">Developer</option>
-            </select>
-            <div>
+        <form class="staffApplications">
+            <div class="applicationColumn">
+                <p>Please enter your personal details so we can contact you</p>
+                <div class="applicationRow">
+                    <input type="text" name="firstName" placeholder="First name">
+                    <input type="text" name="lastName" placeholder="Last name">
+                </div>
+
+                <div class="applicationRow">
+                    <input type="email" name="email" placeholder="Your email adress">
+                    <input type="number" name="age" placeholder="age" max="100" min="0">
+                </div>
+
+                <h2>What are you applying for?</p>
+                <select name="applyingFor" id="applyingFor">
+                    <option value="helper">Helper</option>
+                    <option value="builder">Builder</option>
+                    <option value="moderator">Moderator</option>
+                    <option value="admin"> Admin</option>
+                    <option value="dev">Developer</option>
+                </select>
+            </div>
+
+            <div class="applicationColumn">
                 <p>Why do you want to be part of our staffteam?</p>
                 <textarea name="whyAreYouApplying" placeholder="Why do you want to be part of our staff team?"></textarea>
-            </div>
-            <div>
-            <p>Are you available through discord?</p>
-                <div class="radioYN">
-                    <p>yes</p>
-                    <input type="radio">
-                </div>
-                <div>
-                    <p>no</p>
-                    <input type="radio">
-                </div>
-            </div>
-            <div>
-                <p>I agree with the <span class="termsAndConditions">terms and conditions? <span class="termsAndConditionsText">by agreeing to our terms you agree to pay &#8364 50 in setup fees and additionally pay &#8364 20 a month. If you get fired from the team you will be obligated to pay an additional &#8364 500 in account removal fees and letdown fees</span></span></p>
-                <input type="checkbox">
+                <p>Are you available through discord?</p>
+                <p><input type="radio"> yes</p>
+                <p><input type="radio"> no</p>
+                <p><input type="checkbox"> I agree with the <span class="termsAndConditions">terms and conditions <span class="termsAndConditionsText">by agreeing to our terms you agree to pay &#8364 50 in setup fees and additionally pay &#8364 20 a month. If you get fired from the team you will be obligated to pay an additional &#8364 500 in account removal fees and letdown fees</span></span></p>    
+                <input type="submit">
             </div>
             
-            <input type="submit">
-        </div>
+        </form>
     </main>
 
     <footer class="wieBenIkFooter">
